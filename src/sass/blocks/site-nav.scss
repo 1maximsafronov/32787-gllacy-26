@@ -1,0 +1,18 @@
+.site-nav {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav__link {
+  color: white;
+
+  &:hover {
+    color: #323232;
+    background-color: white;
+  }
+}

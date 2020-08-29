@@ -1,0 +1,14 @@
+.footer-nav__list {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-nav__link {
+  color: #ffffff;
+
+  &--selected {
+    font-weight: 700;
+  }
+}

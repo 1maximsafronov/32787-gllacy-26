@@ -51,8 +51,8 @@
     "gulp-svgstore": "7.0.1",
     "gulp-uglify": "3.0.2",
     "gulp-webp": "4.0.1",
-    "node-normalize-scss": "8.1.2",
     "posthtml-include": "1.4.3",
+    "scss-resets": "^0.5.2",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   }
