@@ -2,17 +2,34 @@
 @import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/user-nav.scss";
 @import "blocks/promo.scss";
+@import "blocks/events.scss";
 @import "blocks/event.scss";
+@import "blocks/best-seller.scss";
 @import "blocks/features.scss";
+@import "blocks/blog-news.scss";
 @import "blocks/news.scss";
 @import "blocks/subscription.scss";
 @import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/footer-nav.scss";
 @import "blocks/copyright.scss";
 @import "blocks/product.scss";
+
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   background-color: #849d8f;
