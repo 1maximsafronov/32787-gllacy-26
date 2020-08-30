@@ -1,3 +1,17 @@
+.subscription {
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.subscription__form {
+  background-color: #f8f7f4;
+  border-radius: 8px;
+}
+
 .subscription__desc {
   color: #5a5a5a;
   font-size: 16px;
