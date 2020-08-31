@@ -1,45 +1,55 @@
 .features {
-  color: #323232;
-  background-image: url("../img/section-bg-pattern.png");
   margin-bottom: 40px;
-  border-radius: 15px;
   padding: 20px;
+
+  color: #323232;
+  border-radius: 15px;
+  background-image: url("../img/section-bg-pattern.png");
 }
 
 .features__desc {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .features__list {
-  list-style: none;
+  display: grid;
+
   margin: 0;
   padding: 0;
-  display: grid;
+
+  list-style: none;
+
   grid-template-columns: auto auto;
   grid-column-gap: 25px;
   grid-row-gap: 10px;
 }
 
 .features__item {
-  padding-left: 55px;
+  position: relative;
+
   padding-top: 15px;
+  padding-left: 55px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  position: relative;
 
   &--ice-cream {
     &::before {
-      content: "";
       position: absolute;
-      width: 49px;
-      height: 49px;
       top: 0;
       left: 0;
+
+      width: 49px;
+      height: 49px;
+
+      content: "";
+
       background-image: url("../img/ice-cream.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -48,12 +58,15 @@
 
   &--eco {
     &::before {
-      content: "";
       position: absolute;
-      width: 49px;
-      height: 49px;
       top: 0;
       left: 0;
+
+      width: 49px;
+      height: 49px;
+
+      content: "";
+
       background-image: url("../img/eco.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -62,12 +75,15 @@
 
   &--cow {
     &::before {
-      content: "";
       position: absolute;
-      width: 49px;
-      height: 49px;
       top: 0;
       left: 0;
+
+      width: 49px;
+      height: 49px;
+
+      content: "";
+
       background-image: url("../img/cow.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -76,12 +92,15 @@
 
   &--thermometer {
     &::before {
-      content: "";
       position: absolute;
-      width: 49px;
-      height: 49px;
       top: 0;
       left: 0;
+
+      width: 49px;
+      height: 49px;
+
+      content: "";
+
       background-image: url("../img/thermometer.svg");
       background-repeat: no-repeat;
       background-position: 0 0;

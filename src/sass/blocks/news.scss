@@ -1,26 +1,32 @@
 .news {
+  padding: 20px;
+
   color: #323232;
   border-radius: 15px;
   background-color: #ffffff;
-  padding: 20px;
   background-image: url("../img/icecream-bg.png");
   background-size: cover;
 }
 
 .news__subtext {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .news__title {
   display: block;
+
   width: 300px;
+
+  text-decoration: underline;
+
+  color: #323232;
+
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  text-decoration: underline;
-  color: #323232;
 }

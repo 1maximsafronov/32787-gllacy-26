@@ -1,8 +1,10 @@
 .social__list {
-  list-style: none;
+  display: flex;
+
   margin: 0;
   padding: 0;
-  display: flex;
+
+  list-style: none;
 }
 
 .social__item {
@@ -11,13 +13,15 @@
 
 .social__link {
   display: block;
+
   width: 38px;
   height: 38px;
-  border-radius: 50%;
+
+  opacity: 0.8;
   border: 3px solid rgba(#ffffff, 0.5);
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.8;
 
   &--twitter {
     background-image: url("../img/twitter.svg");

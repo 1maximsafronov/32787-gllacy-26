@@ -1,15 +1,19 @@
 .footer-nav__list {
+  display: grid;
+  justify-content: start;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  display: grid;
+
   grid-template-columns: auto auto;
   grid-column-gap: 10px;
-  margin: 0;
   justify-items: start;
-  justify-content: start;
-  padding: 0;
 }
 
 .footer-nav__item {
@@ -29,17 +33,21 @@
   }
 
   &--selected {
-    font-weight: 700;
     position: relative;
 
+    font-weight: 700;
+
     &::before {
-      content: "";
       position: absolute;
+      top: 50%;
+      left: -22px;
+
       width: 15px;
       height: 13px;
-      left: -22px;
-      top: 50%;
+
+      content: "";
       transform: translateY(-50%);
+
       background-image: url("../img/heart.svg");
       background-repeat: no-repeat;
     }
