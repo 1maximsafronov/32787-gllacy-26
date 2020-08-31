@@ -1,4 +1,7 @@
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -11,11 +14,51 @@
   line-height: 18px;
 }
 
-.site-nav__link {
-  color: white;
+.site-nav__item {
+  position: relative;
 
   &:hover {
-    color: #323232;
-    background-color: white;
+    .site-nav__link {
+      text-decoration: none;
+
+      color: #323232;
+      background-color: #f7f6f3;
+    }
+
+    .site-nav__sub-nav {
+      display: block;
+    }
   }
+}
+
+.site-nav__link {
+  display: block;
+
+  padding-top: 7px;
+  padding-right: 14px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+
+  color: white;
+  border-radius: 15px;
+
+  &--current {
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #d07058;
+  }
+
+  &:active {
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px #696969;
+  }
+}
+
+.site-nav__sub-nav {
+  position: absolute;
+  top: 100%;
+  left: -7px;
+
+  display: none;
 }
