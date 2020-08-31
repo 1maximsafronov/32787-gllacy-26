@@ -1,11 +1,46 @@
+.event {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-radius: 15px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+
+  &--raspberry {
+    background-image: url("../img/raspberry-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--chocolate {
+    background-image: url("../img/chocolate-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
 .event__title {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .event__desc {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+.event__btn {
+  margin-top: auto;
+  margin-left: auto;
 }
