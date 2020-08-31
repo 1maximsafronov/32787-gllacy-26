@@ -5,6 +5,29 @@
   line-height: 18px;
 }
 
+.copyright__logo {
+  margin: 0;
+  margin-bottom: 5px;
+  width: 108px;
+  height: 39px;
+}
+
+.copyright__author {
+  margin: 0;
+}
+
 .copyright__link {
   color: #fefefe;
+
+  &:visited {
+    color: #fefefe;
+  }
+
+  &:hover {
+    color: #ffbc9e;
+  }
+
+  &:active {
+    color: #ffbc9e;
+  }
 }
