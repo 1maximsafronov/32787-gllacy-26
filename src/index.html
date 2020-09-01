@@ -17,7 +17,7 @@
       </a>
       <ul class="main-nav__site-nav site-nav">
         <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Каталог</a>
+          <a href="catalog.html" class="site-nav__link">Каталог</a>
           <ul class="site-nav__sub-nav sub-nav">
             <li class="sub-nav__item">
               <a href="" class="sub-nav__link sub-nav__link--highlight">Новинки</a>
@@ -46,14 +46,35 @@
       <ul class="main-nav__user-nav user-nav">
         <li class="user-nav__item">
           <a href="#" class="user-nav__link user-nav__link--search"><span class="visually-hidden">Поиск</span></a>
+          <form class="user-nav__modal user-nav__search-form search-form" action="">
+            <p class="search-form__text-field custom-text-field">
+              <input type="text" placeholder="Крем-брюле">
+            </p>
+          </form>
         </li>
         <li class="user-nav__item">
           <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
+          <form class="user-nav__modal user-nav__login-form login-form" action="">
+            <p class="login-form__text-field custom-text-field">
+              <input type="text" placeholder="email@example.com">
+            </p>
+            <p class="login-form__text-field custom-text-field">
+              <input type="password" placeholder="••••••••">
+            </p>
+            <div class="login-form__columns">
+              <button class="login-form__submit-btn button" type="submit">Войти</button>
+              <p class="login-form__helper">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </div>
+          </form>
         </li>
         <li class="user-nav__item">
-          <a href="#" class="user-nav__link user-nav__link--cart">
-            Пусто
-          </a>
+          <a href="#" class="user-nav__link user-nav__link--cart">Пусто</a>
+          <div class="user-nav__modal user-nav__product-cart product-cart">
+            <a href="#" class="product-cart__order button">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -109,7 +130,6 @@
               height="267">
           </p>
           <p class="product__price">310 &#8381;<span class="product__price-sub">/кг</span></p>
-
         </li>
         <li class="best-seller__item product product--hit">
           <h3 class="product__title">Сливочно-кофейное с кусочками шоколада</h3>
@@ -117,7 +137,6 @@
             <img src="img/icecream-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           </p>
           <p class="product__price">380 &#8381;<span class="product__price-sub">/кг</span></p>
-
         </li>
         <li class="best-seller__item product product--hit">
           <h3 class="product__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -126,7 +145,6 @@
               height="267">
           </p>
           <p class="product__price">355 &#8381;<span class="product__price-sub">/кг</span></p>
-
         </li>
         <li class="best-seller__item product product--hit">
           <h3 class="product__title">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -134,7 +152,6 @@
             <img src="img/icecream-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           </p>
           <p class="product__price">415 &#8381;<span class="product__price-sub">/кг</span></p>
-
         </li>
       </ul>
     </section>

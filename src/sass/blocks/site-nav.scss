@@ -17,6 +17,8 @@
 .site-nav__item {
   position: relative;
 
+  padding-bottom: 5px;
+
   &:hover {
     .site-nav__link {
       text-decoration: none;

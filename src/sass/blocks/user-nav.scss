@@ -16,9 +16,48 @@
 }
 
 .user-nav__item {
+  position: relative;
+
   margin-left: 10px;
+  padding-bottom: 5px;
+
+  &:hover {
+    .user-nav__link {
+      color: #323232;
+      background-color: #ffffff;
+    }
+
+    .user-nav__modal {
+      display: block;
+    }
+  }
 }
 
+.user-nav__modal {
+  display: none;
+}
+
+.user-nav__search-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  width: 340px;
+}
+
+.user-nav__login-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  width: 277px;
+}
+
+.user-nav__product-cart {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
 
 .user-nav__link {
   display: block;
