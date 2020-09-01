@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: 8px;
+}
+
+.breadcrumbs__link {
+  margin-right: 8px;
+
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #ffbc9e;
+  }
+
+  &:active {
+    color: #ffbc9e;
+  }
+}
