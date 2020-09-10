@@ -1,19 +1,26 @@
+.catalog__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
 
 .catalog__list {
   display: grid;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 26px;
   grid-column-gap: 20px;
+  grid-row-gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .catalog__pagination {
   display: inline-block;
-
   margin-left: auto;
 }

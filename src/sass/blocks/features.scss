@@ -3,30 +3,30 @@
   padding: 20px;
 
   color: #323232;
-  border-radius: 15px;
+
   background-image: url("../img/section-bg-pattern.png");
+  border-radius: 15px;
 }
 
 .features__desc {
   margin: 0;
   margin-bottom: 10px;
 
-  font-size: 24px;
   font-weight: 500;
+  font-size: 24px;
   line-height: 30px;
 }
 
 .features__list {
   display: grid;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  grid-template-columns: auto auto;
   grid-column-gap: 25px;
   grid-row-gap: 10px;
+  grid-template-columns: auto auto;
 }
 
 .features__item {
@@ -35,20 +35,19 @@
   padding-top: 15px;
   padding-left: 55px;
 
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 22px;
 
   &--ice-cream {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
 
       width: 49px;
       height: 49px;
-
-      content: "";
 
       background-image: url("../img/ice-cream.svg");
       background-repeat: no-repeat;
@@ -58,14 +57,13 @@
 
   &--eco {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
 
       width: 49px;
       height: 49px;
-
-      content: "";
 
       background-image: url("../img/eco.svg");
       background-repeat: no-repeat;
@@ -75,14 +73,13 @@
 
   &--cow {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
 
       width: 49px;
       height: 49px;
-
-      content: "";
 
       background-image: url("../img/cow.svg");
       background-repeat: no-repeat;
@@ -92,14 +89,13 @@
 
   &--thermometer {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
 
       width: 49px;
       height: 49px;
-
-      content: "";
 
       background-image: url("../img/thermometer.svg");
       background-repeat: no-repeat;

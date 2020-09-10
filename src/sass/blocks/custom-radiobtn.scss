@@ -1,0 +1,17 @@
+.custom-radiobtn {
+  label {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+
+      border: 2px solid rgba(#ffffff, 0.8);
+      border-radius: 50%;
+    }
+  }
+}

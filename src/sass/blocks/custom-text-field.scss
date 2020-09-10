@@ -1,22 +1,20 @@
 .custom-text-field {
-  color: #999999;
-
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
+  color: #999999;
 
   input {
     display: block;
-
     width: 100%;
     padding-top: 9px;
     padding-right: 14px;
     padding-bottom: 9px;
     padding-left: 14px;
 
+    font: inherit;
+
     border: 1px solid #d3d3d2;
     border-radius: 5px;
-
-    font: inherit;
   }
 }

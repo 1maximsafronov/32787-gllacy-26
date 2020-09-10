@@ -3,21 +3,18 @@
 
   display: flex;
   flex-direction: column;
-
   padding-bottom: 20px;
 
   &--hit {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
 
       display: block;
-
       width: 61px;
       height: 61px;
-
-      content: "";
 
       background-image: url("../img/hit.svg");
       background-repeat: no-repeat;
@@ -35,17 +32,14 @@
 
 .product__title {
   order: 1;
-
   margin: 0;
 
-  text-align: center;
-  text-decoration: underline;
-
-  color: #ffffff;
-
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .product__price {
@@ -55,12 +49,11 @@
 
   margin: 0;
 
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 45px;
 }
 
 .product__price-sub {

@@ -1,17 +1,14 @@
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
-
-  color: white;
-
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 18px;
+  color: white;
 }
 
 .site-nav__item {
@@ -21,9 +18,9 @@
 
   &:hover {
     .site-nav__link {
+      color: #323232;
       text-decoration: none;
 
-      color: #323232;
       background-color: #f7f6f3;
     }
 
@@ -35,19 +32,19 @@
 
 .site-nav__link {
   display: block;
-
   padding-top: 7px;
   padding-right: 14px;
   padding-bottom: 7px;
   padding-left: 14px;
 
   color: white;
+
   border-radius: 15px;
 
   &--current {
+    color: #ffffff;
     text-decoration: none;
 
-    color: #ffffff;
     background-color: #d07058;
   }
 

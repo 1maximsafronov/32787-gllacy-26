@@ -98,30 +98,60 @@
     </ul>
     <section class="catalog">
       <h1 class="catalog__title">Сливочное мороженое</h1>
-      <div class="catalog__filter filter">
-        <ul class="filter__list">
-          <li class="filter__item filter__checkbox custom-checkbox">
+      <form action="" class="catalog__filter filter">
+        Сортировка:
+        по популярности
+        сначала недорогие
+        сначала дорогие
+        по жирности
+
+        Цена: 100 руб. – 500 руб.
+
+        <fieldset>
+          <legend>Жирность:</legend>
+          <p class="custom-radiobtn">
+            <input class="visually-hidden" type="radio" name="fat" id="fat-0-pс" value="0">
+            <label class="custom-radiobtn__label" for="fat-0-pс">0%</label>
+          </p>
+          <p class="custom-radiobtn">
+            <input class="visually-hidden" type="radio" name="fat" id="fat-10-pс" value="0">
+            <label for="fat-10-pс">до 10%</label>
+          </p>
+          <p class="custom-radiobtn">
+            <input class="visually-hidden" type="radio" name="fat" id="fat-under-30-pc" value="0">
+            <label class="custom-radiobtn__label" for="fat-under-30-pc">до 30%</label>
+          </p>
+          <p class="custom-radiobtn">
+            <input class="visually-hidden" type="radio" name="fat" id="fat-over-30-pc" value="0">
+            <label class="custom-radiobtn__label" for="fat-over-30-pc">выше 30%</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <p>
             <input type="checkbox" name="chocolate-filling" id="">
             <label for="">шоколадные</label>
-          </li>
-          <li class="filter__item filter__checkbox custom-checkbox">
+          </p>
+          <p>
             <input type="checkbox" name="" id="">
             <label for="">сахарные присыпки</label>
-          </li>
-          <li class="filter__item filter__checkbox custom-checkbox">
+          </p>
+          <p>
             <input type="checkbox" name="" id="">
             <label for="">фрукты</label>
-          </li>
-          <li class="filter__item filter__checkbox custom-checkbox">
+          </p>
+          <p>
             <input type="checkbox" name="" id="">
             <label for="">сиропы</label>
-          </li>
-          <li class="filter__item filter__checkbox custom-checkbox">
+          </p>
+          <p>
             <input type="checkbox" name="" id="">
             <label for="">джемы</label>
-          </li>
-        </ul>
-      </div>
+          </p>
+        </fieldset>
+        <button class="filter__submit-btn" type="submit">Применить</button>
+      </form>
       <ul class="catalog__list">
         <li class="catalog__item product">
           <h3 class="product__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>

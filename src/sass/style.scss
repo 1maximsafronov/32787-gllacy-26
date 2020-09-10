@@ -1,6 +1,7 @@
 @import "normalize";
 @import "blocks/button.scss";
 @import "blocks/custom-text-field.scss";
+@import "blocks/custom-radiobtn.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -21,6 +22,7 @@
 @import "blocks/subscription.scss";
 @import "blocks/contacts.scss";
 @import "blocks/catalog.scss";
+@import "blocks/filter.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/pagination.scss";
 @import "blocks/page-footer.scss";
@@ -41,11 +43,11 @@ html {
 }
 
 body {
-  color: white;
-  background-color: #849d8f;
-
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+  background-color: #849d8f;
 }
 
 .container {

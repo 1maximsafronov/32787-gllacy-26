@@ -1,18 +1,15 @@
 .user-nav {
   display: flex;
   justify-content: flex-end;
-
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 
   list-style: none;
-
-  color: white;
-
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 16px;
+  color: white;
 }
 
 .user-nav__item {
@@ -24,6 +21,7 @@
   &:hover {
     .user-nav__link {
       color: #323232;
+
       background-color: #ffffff;
     }
 
@@ -61,16 +59,15 @@
 
 .user-nav__link {
   display: block;
-
   padding-top: 8px;
   padding-right: 17px;
   padding-bottom: 8px;
 
+  color: white;
   text-decoration: none;
 
-  color: white;
-  border-radius: 15px;
   background-color: rgba(#ffffff, 0.2);
+  border-radius: 15px;
 
   &--search {
     width: 33px;
@@ -87,6 +84,7 @@
 
   &:hover {
     color: #323232;
+
     background-color: #ffffff;
   }
 }

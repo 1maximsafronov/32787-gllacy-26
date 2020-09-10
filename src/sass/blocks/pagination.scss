@@ -2,25 +2,23 @@
   display: flex;
   align-items: center;
 
-  color: #ffffff;
-
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
+  color: #ffffff;
 }
 
 .pagination__item {
   display: flex;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
   width: 26px;
   height: 26px;
   margin-right: 2px;
 
+  color: #ffffff;
   text-decoration: none;
 
-  color: #ffffff;
   border-radius: 50%;
 
   &:last-of-type {
@@ -29,19 +27,20 @@
 
   &--current {
     color: #323232;
+
     background-color: #ffffff;
   }
 
   &:hover,
   &:focus {
     color: #ffffff;
+
     background-color: rgba(#ffffff, 0.2);
   }
 }
 
 .pagination__control {
   display: block;
-
   width: 9px;
   height: 14px;
 
