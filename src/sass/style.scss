@@ -1,4 +1,6 @@
 @import "normalize";
+@import "fonts.scss";
+@import "variables.scss";
 
 html {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: $primary-font;
   color: white;
 
   background-color: #849d8f;
