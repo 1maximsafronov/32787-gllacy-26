@@ -1,4 +1,4 @@
-
+@import "normalize";
 
 html {
   box-sizing: border-box;
@@ -27,7 +27,7 @@ body {
   padding-left: 27px;
 }
 
-@import "normalize";
+
 @import "blocks/button.scss";
 @import "blocks/custom-text-field.scss";
 @import "blocks/custom-radiobtn.scss";
