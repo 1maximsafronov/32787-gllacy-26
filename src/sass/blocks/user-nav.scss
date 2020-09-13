@@ -25,6 +25,14 @@
       background-color: #ffffff;
     }
 
+    .user-nav__icon {
+      fill: #000000;
+
+      &--cart {
+        background-image: url("../img/basket-red.svg");
+      }
+    }
+
     .user-nav__modal {
       display: block;
     }
@@ -58,24 +66,29 @@
 }
 
 .user-nav__link {
+  position: relative;
+
   display: block;
   padding-top: 8px;
   padding-right: 17px;
   padding-bottom: 8px;
+  padding-left: 15px;
 
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 
   background-color: rgba(#ffffff, 0.2);
   border-radius: 15px;
 
+
   &--search {
     width: 33px;
     height: 33px;
+    padding: 0;
   }
 
   &--login {
-    padding-left: 44px;
+    padding-left: 45px;
   }
 
   &--cart {
@@ -86,5 +99,41 @@
     color: #323232;
 
     background-color: #ffffff;
+  }
+}
+
+.user-nav__icon {
+  position: absolute;
+
+  fill: #ffffff;
+
+  &--search {
+    top: 50%;
+    left: 50%;
+
+    width: 17px;
+    height: 17px;
+
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  &--login {
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+  }
+
+  &--cart {
+    top: 50%;
+    left: 15px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translateY(-50%);
   }
 }
