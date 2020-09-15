@@ -1,6 +1,6 @@
 .main-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-nav__logo {
@@ -9,9 +9,11 @@
 
 .main-nav__site-nav {
   width: 690px;
+  margin-top: 14px;
 }
 
 .main-nav__user-nav {
   width: 267px;
+  margin-top: 14px;
   margin-left: auto;
 }

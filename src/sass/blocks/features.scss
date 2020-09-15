@@ -1,6 +1,9 @@
 .features {
   margin-bottom: 40px;
-  padding: 20px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
 
   color: #323232;
 
@@ -10,7 +13,7 @@
 
 .features__desc {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   font-weight: 500;
   font-size: 24px;
@@ -25,15 +28,15 @@
   list-style: none;
 
   grid-column-gap: 25px;
-  grid-row-gap: 10px;
+  grid-row-gap: 8px;
   grid-template-columns: auto auto;
 }
 
 .features__item {
   position: relative;
 
-  padding-top: 15px;
-  padding-left: 55px;
+  padding-top: 14px;
+  padding-left: 56px;
 
   font-weight: 400;
   font-size: 16px;

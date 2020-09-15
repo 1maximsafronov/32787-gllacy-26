@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   padding-left: 20px;
 
   font-weight: 700;
@@ -30,7 +30,9 @@
   }
 
   &--big {
+    padding-top: 10px;
     padding-right: 40px;
+    padding-bottom: 10px;
     padding-left: 40px;
 
     font-size: 32px;

@@ -1,8 +1,6 @@
 .user-nav {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0;
 
   list-style: none;
@@ -88,11 +86,11 @@
   }
 
   &--login {
-    padding-left: 45px;
+    padding-left: 43px;
   }
 
   &--cart {
-    padding-left: 45px;
+    padding-left: 44px;
   }
 
   &:hover {
@@ -119,14 +117,14 @@
 
   &--login {
     top: 50%;
-    left: 15px;
+    left: 16px;
 
     transform: translateY(-50%);
   }
 
   &--cart {
     top: 50%;
-    left: 15px;
+    left: 16px;
 
     width: 21px;
     height: 20px;

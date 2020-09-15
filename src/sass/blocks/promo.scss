@@ -1,11 +1,12 @@
 .promo {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .promo__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 268px;
 
   &:nth-child(n+2) {
     display: none;
@@ -14,6 +15,8 @@
 
 .promo__title {
   width: 670px;
+  margin: 0;
+  margin-bottom: 32px;
 
   font-weight: 700;
   font-size: 60px;
@@ -22,6 +25,8 @@
 }
 
 .promo__btn {
+  min-width: 165px;
+
   font-size: 32px;
   line-height: 44px;
 }
