@@ -1,0 +1,30 @@
+
+.write-us__wrapper {
+    width: 477px;
+}
+.write-us__form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.write-us__submit {
+    align-self: flex-end;
+}
+
+.write-us__text-feild {
+    margin: 0;
+    margin-bottom: 20px;
+    
+    &--name,
+    &--email {
+        width: 267px;
+    }
+
+    &:last-child {
+        margin-bottom: 25px;
+    }
+}
+.write-us__textarea {
+    height: 155px;
+}
