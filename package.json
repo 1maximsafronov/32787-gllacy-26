@@ -53,7 +53,7 @@
     "gulp-webp": "4.0.1",
     "posthtml-include": "1.4.3",
     "scss-resets": "^0.5.2",
-    "stylelint": "13.6.1",
+    "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
   }
 }
