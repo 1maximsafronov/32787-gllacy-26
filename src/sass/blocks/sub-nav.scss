@@ -1,17 +1,21 @@
 .sub-nav {
-  margin: 0;
-  padding: 0;
+  z-index: 1;
+
   overflow: hidden;
 
-  list-style: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
+  margin: 0;
+  padding: 0;
 
-  background-color: #f8f7f4;
+  list-style: none;
+
+  color: #323232;
   border-radius: 5px;
+  background-color: #f8f7f4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .sub-nav__item {
@@ -20,21 +24,35 @@
 
 .sub-nav__link {
   display: block;
+
   padding-top: 6px;
   padding-right: 20px;
   padding-bottom: 6px;
   padding-left: 20px;
 
-  color: #323232;
   text-decoration: none;
 
+  color: #323232;
+
   &--highlight {
-    margin-right: 6px;
-    margin-left: 6px;
+    position: relative;
 
     font-weight: 700;
 
-    border-bottom: 1px solid rgba(#323232, 0.2);
+    &::after {
+      position: absolute;
+      right: 6px;
+      bottom: -1px;
+      left: 6px;
+
+      display: block;
+
+      height: 1px;
+
+      content: "";
+
+      background-color: rgba(#323232, 0.2);
+    }
   }
 
   &:hover {
