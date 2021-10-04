@@ -1,46 +1,101 @@
 .login-form {
+  width: 277px;
   padding-top: 20px;
   padding-right: 17px;
   padding-bottom: 22px;
   padding-left: 19px;
 
+  border-radius: 4px;
   background-color: #f8f7f4;
-  border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.login-form__text-field {
+.login-form__textbox {
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 13px;
+  padding-right: 14px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+
+  color: #999999;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-form__textbox-wrapper {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.login-form__submit-btn {
-  margin-right: 20px;
-}
-
-.login-form__columns {
+.login-form__bottom-controls {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
-.login-form__helper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0;
+.login-form__submit {
+  align-items: center;
 
-  font-weight: 400;
-  font-size: 13px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  border: none;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 1px 2px rgba(172, 16, 0, 0.25);
+
+  font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
 
-  a {
-    color: #323232;
+  &:hover,
+  &:focus {
+    background: linear-gradient(0deg, rgba(#ffffff, 0.2), rgba(#ffffff, 0.2)),
+      linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+    box-shadow: 0 1px 2px #ac1000;
+  }
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: #e84d37;
-    }
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+      linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+    box-shadow: inset 0 2px 2px #942718;
+  }
+}
+
+.login-form__links {
+  margin: 0;
+}
+
+.login-form__link {
+  margin-bottom: 6px;
+
+  color: #323232;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #e84d37;
+  }
+
+  &:active {
+    color: #e84d37;
   }
 }

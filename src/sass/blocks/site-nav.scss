@@ -1,62 +1,118 @@
 .site-nav {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+
+  margin: 0;
   padding: 0;
 
   list-style: none;
-  font-weight: 700;
+
   font-size: 16px;
+  font-weight: bold;
   line-height: 18px;
-  color: white;
 }
 
 .site-nav__item {
   position: relative;
 
-  padding-bottom: 5px;
+  margin-right: 6px;
 
-  &:hover {
-    .site-nav__link {
-      color: #323232;
-      text-decoration: none;
+  color: #ffffff;
 
-      background-color: #f7f6f3;
+  &--current .site-nav__link {
+    color: #ffffff;
+    background-color: #d07058;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      position: absolute;
+      bottom: -5px;
+
+      display: block;
+
+      width: 100%;
+      height: 5px;
+
+      content: "";
+
+      background-color: transparent;
     }
 
     .site-nav__sub-nav {
-      display: block;
+      display: inline-block;
     }
   }
 }
 
 .site-nav__link {
+  position: relative;
+
   display: block;
+  align-items: center;
+
   padding-top: 7px;
   padding-right: 14px;
   padding-bottom: 7px;
   padding-left: 14px;
 
-  color: white;
+  text-decoration: none;
 
-  border-radius: 15px;
+  color: #ffffff;
+  border-radius: 26px;
+
+  &::after {
+    position: absolute;
+    right: 14px;
+    bottom: 6px;
+    left: 14px;
+
+    display: block;
+
+    height: 1px;
+
+    content: "";
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: #323232;
+    background-color: #ffffff;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &[href]:active {
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px #696969;
+
+    &::after {
+      display: none;
+    }
+  }
 
   &--current {
     color: #ffffff;
-    text-decoration: none;
-
     background-color: #d07058;
-  }
 
-  &:active {
-    background-color: #ededed;
-    box-shadow: inset 0 2px 1px #696969;
+    &::after {
+      display: none;
+    }
   }
 }
 
 .site-nav__sub-nav {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 5px);
   left: -7px;
 
   display: none;
+
+  min-width: 143px;
 }
