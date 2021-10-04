@@ -55,5 +55,6 @@
     "scss-resets": "^0.5.2",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
-  }
+  },
+  "dependencies": {}
 }
