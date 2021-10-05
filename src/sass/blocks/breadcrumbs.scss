@@ -1,15 +1,17 @@
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
 
   list-style: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+
   color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .breadcrumbs__item {
