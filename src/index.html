@@ -145,7 +145,7 @@
           <a class="events__btn" href="#">Хочу шоколадки!</a>
         </div>
       </section>
-      <section class="best-seller">
+      <section style="display: none;" class="best-seller">
         <h2 class="visually-hidden">Хит продаж</h2>
         <ul class="best-seller__list product-list">
           <li class="best-seller__item product product--hit">
@@ -215,26 +215,24 @@
             произведены из натурального, экологически чистого сырья.
           </li>
           <li class="features__item features__item--thermometer">
-            Доставка нашего мороженого до заказчиков осуществляется в
-            специальном термопаке, который не дает мороженому растаять в пути и
+            Доставка нашего мороженого до заказчиков осуществляется
+            в&nbsp;специальном термопаке, который не дает
+            мороженому растаять в пути и
             позволяет сохранить превосходный вкус.
           </li>
         </ul>
       </section>
-      <div class="page-main__columns">
-        <!-- ?? Сделать новость article -->
-        <section class="blog-news">
-          <h2 class="visually-hidden">Новости сайта</h2>
-          <div class="blog-news__item news">
-            <p class="news__subtext">Новое в нашем блоге</p>
-            <!-- ?? Сделтать название заголовком h1/h2/h3 -->
-            <a class="news__title" href="#">10 способов сервировки
+      <div class="page-main__columns news">
+        <article class="news__item">
+          <p class="news__subtitle">Новое в нашем блоге</p>
+          <h2 class="news__title">
+            <a href="#">10 способов сервировки
               фруктовых щербетов к
               столу</a>
-          </div>
-        </section>
-        <section class="subscription">
-          <h2 class="visually-hidden">Пописка на рассылку</h2>
+          </h2>
+        </article>
+        <section class="news__subscription subscription">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
           <form class="subscription__form" action="index.html" method="post">
             <p class="subscription__desc">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
@@ -248,32 +246,41 @@
               <input type="email" id="subscription-email" name="subscription-email" placeholder="email@example.com"
                 value="">
             </p>
-            <button class="subscription__submit-btn button" type="submit" name="subscribe-button">Отправить</button>
+            <button class="subscription__submit-btn" type="submit" name="subscribe-button">Отправить</button>
           </form>
         </section>
       </div>
     </div>
     <section class="contacts">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__info">
-        <p class="contacts__address">
-          Адрес главного офиса <br>
-          и офлайн-магазина:<br>
+      <div class="contacts__wrapper container">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts__info">
+          <p class="contacts__address">
+            Адрес главного офиса <br>
+            и офлайн-магазина:<br>
 
-          <b>ул. Большая Конюшенная <br>
-            19/8, Санкт-Петербург</b>
-        </p>
+            <b class="contacts__address-data">ул. Большая Конюшенная <br>
+              19/8, Санкт-Петербург</b>
+          </p>
 
-        <p class="contacts__phone">
-          Для заказов по телефону: <br>
+          <p class="contacts__phone">
+            Для заказов по телефону: <br>
 
-          <b>8 812 450-25-25</b> <br>
-          (с 10 до 20 ежедневно)
-        </p>
-        <a class="contacts__btn button" href="#">Форма обратной связи</a>
+            <a class="contacts__phone-number" href="tel:+">
+              8 812 450-25-25
+            </a><br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="contacts__btn" href="#">Форма обратной связи</a>
+        </div>
       </div>
       <div class="contacts__map">
-        <img src="img/map.png" alt="Адрес главного офиса ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+        <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.326120%2C59.939052&utm_medium=mapframe&utm_source=maps&z=16.33"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
+        <iframe class="contacts__map-embedded" src="https://yandex.ru/map-widget/v1/-/CCUqmMdLtB" width="560"
+          height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </div>
     </section>
   </main>

@@ -1,30 +1,111 @@
 .contacts {
   position: relative;
 
+  color: #323232;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__wrapper {
   display: flex;
   justify-content: flex-end;
-  // временно
-  min-height: 430px;
+
   padding-top: 62px;
   padding-bottom: 62px;
-  overflow: hidden;
 }
 
 .contacts__info {
   position: relative;
   z-index: 2;
 
-  width: 302px;
+  width: 303px;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
 
-  color: #323232;
+  border-radius: 16px;
+  background-color: #fefefe;
+}
 
-  background-color: #ffffff;
+.contacts__address {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.contacts__address-data {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.contacts__phone {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.contacts__phone-number {
+  text-decoration: none;
+
+  color: inherit;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.contacts__btn {
+  display: block;
+
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+  border-radius: 70px;
+  background: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(0deg, rgba(#ffffff, 0.2), rgba(#ffffff, 0.2)),
+      linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+    box-shadow: 0 1px 2px #ac1000;
+  }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+      linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+    box-shadow: inset 0 2px 2px #942718;
+  }
 }
 
 .contacts__map {
   position: absolute;
+  z-index: 0;
   top: 0;
-  left: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-  transform: translateX(-50%);
+  background-color: #e8e5d5;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.contacts__map-embedded {
+  width: 100%;
+  height: 100%;
 }
