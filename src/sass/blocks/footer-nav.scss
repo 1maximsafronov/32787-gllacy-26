@@ -1,15 +1,18 @@
-.footer-nav__list {
+.footer-nav {
   display: grid;
   justify-content: start;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
-  font-weight: 400;
+
   font-size: 13px;
+  font-weight: 400;
   line-height: 18px;
 
-  grid-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 5px;
   grid-template-columns: auto auto;
   justify-items: start;
 }
@@ -26,6 +29,7 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     color: #ffbc9e;
   }
@@ -36,7 +40,6 @@
     font-weight: 700;
 
     &::before {
-      content: "";
       position: absolute;
       top: 50%;
       left: -22px;
@@ -44,9 +47,11 @@
       width: 15px;
       height: 13px;
 
+      content: "";
+      transform: translateY(-50%);
+
       background-image: url("../img/heart.svg");
       background-repeat: no-repeat;
-      transform: translateY(-50%);
     }
   }
 }

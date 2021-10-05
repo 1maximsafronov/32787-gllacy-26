@@ -1,5 +1,7 @@
-.social__list {
+.social {
   display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -11,38 +13,65 @@
 }
 
 .social__link {
-  display: block;
-  width: 38px;
-  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid rgba(#ffffff, 0.5);
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border: 3px solid rgba(#ffffff, 0.5);
-  border-radius: 50%;
-  opacity: 0.8;
+
+  &::before {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    content: "";
+
+    opacity: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
   &--twitter {
-    background-image: url("../img/twitter.svg");
+    &::before {
+      background-image: url("../img/twitter.svg");
+    }
   }
 
   &--inst {
-    background-image: url("../img/instagram.svg");
+    &::before {
+      background-image: url("../img/instagram.svg");
+    }
   }
 
   &--facebook {
-    background-image: url("../img/fb.svg");
+    &::before {
+      background-image: url("../img/fb.svg");
+    }
   }
 
   &--vk {
-    background-image: url("../img/vk.svg");
+    &::before {
+      background-image: url("../img/vk.svg");
+    }
   }
 
-  &:hover {
-    border: 3px solid rgba(#ffffff, 0.7);
-    opacity: 1;
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(#ffffff, 0.5);
+
+    &::before {
+      opacity: 1;
+    }
   }
 
   &:active {
-    opacity: 0.7;
+    border: 2px solid rgba(#ffffff, 0.7);
   }
 }
