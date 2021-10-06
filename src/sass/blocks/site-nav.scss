@@ -109,6 +109,7 @@
 
 .site-nav__sub-nav {
   position: absolute;
+  z-index: 2;
   top: calc(100% + 5px);
   left: -7px;
 

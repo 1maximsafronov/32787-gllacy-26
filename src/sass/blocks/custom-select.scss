@@ -1,13 +1,64 @@
-
 .custom-select {
+  position: relative;
+
+  display: inline-block;
+}
+
+.custom-select__control {
+  display: block;
+
+  margin: 0;
+  padding: 0;
   padding-top: 9px;
+  padding-right: 35px;
   padding-bottom: 9px;
+  padding-left: 16px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+  cursor: pointer;
+
   color: #ffffff;
-
-  background-color: rgba(#f8f7f4, 0.2);
   border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  appearance: none;
+
+  option {
+    color: #323232;
+  }
+
+  &:hover {
+    color: #323232;
+  }
+
+  &:hover + .custom-select__icon {
+    fill: #323232;
+  }
+
+  &:focus {
+    color: #323232;
+    outline: none;
+    background-color: #ffffff;
+  }
+
+  &:focus + .custom-select__icon {
+    fill: #323232;
+  }
+}
+
+.custom-select__icon {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 14px;
+
+  width: 11px;
+  height: 10px;
+
+  pointer-events: none;
+
+  fill: #ffffff;
 }

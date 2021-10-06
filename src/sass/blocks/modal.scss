@@ -23,7 +23,7 @@
 
   transform: translateX(-50%) translateY(-50%);
 
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #f8f7f4;
 }
 
@@ -45,6 +45,8 @@
 
   width: 17px;
   height: 17px;
+
+  cursor: pointer;
 
   border: none;
   background: none;
