@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: none;
+
+  &:nth-child(3) {
+    display: block;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.slider__toggle {
+  display: block;
+
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+
+  &--current {
+    background-color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
+}

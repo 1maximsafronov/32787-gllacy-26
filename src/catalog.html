@@ -51,9 +51,10 @@
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
-          <form class="user-nav__popup search-form" id="user-nav-serach-form" action="">
-            <label class="visually-hidden" for="">Поиск</label>
-            <input class="search-form__textfield" type="text" placeholder="Крем-брюле">
+          <form class="user-nav__popup search-form" id="serach-form" action="#" method="GET">
+            <label class="visually-hidden" for="serach-form-text">Поиск</label>
+            <input class="search-form__textfield" id="serach-form-text" name="serach-form-text" type="text"
+              placeholder="Крем-брюле">
           </form>
         </li>
         <li class="user-nav__item user-nav__item--login">
@@ -64,14 +65,16 @@
             </svg>
             Вход
           </a>
-          <form class="user-nav__popup login-form" action="">
+          <form class="user-nav__popup login-form" id="login-form" action="#" method="POST">
             <p class="login-form__textbox-wrapper">
-              <label class="visually-hidden" for="">Логин</label>
-              <input class="login-form__textbox" type="email" name="" id="" placeholder="email@example.com">
+              <label class="visually-hidden" for="login-form-user-email">Логин</label>
+              <input class="login-form__textbox" type="email" name="login-form-user-email" id="login-form-user-email"
+                placeholder="email@example.com">
             </p>
             <p class="login-form__textbox-wrapper">
-              <label class="visually-hidden" for="">Пароль</label>
-              <input class="login-form__textbox" type="password" name="" id="" placeholder="......">
+              <label class="visually-hidden" for="login-form-user-password">Пароль</label>
+              <input class="login-form__textbox" type="password" name="login-form-user-password"
+                id="login-form-user-password" placeholder="......">
             </p>
             <div class="login-form__bottom-controls">
               <button class="login-form__submit" type="submit">Войти</button>
@@ -150,13 +153,13 @@
 
     <form class="catalog__filter filter" id="filters-form" action="index.html" method="GET">
       <div class="filter__item">
-        <label class="filter__title" for="">Сортировка:</label>
+        <label class="filter__title" for="filters-form-sort">Сортировка:</label>
         <div class="custom-select">
-          <select class="custom-select__control" id="filters-form-sort" name="filters-form-sort" id="">
-            <option value="" selected>по популярности</option>
-            <option value="" selected>сначала недорогие</option>
-            <option value="" selected>сначала дорогие</option>
-            <option value="" selected>по жирности</option>
+          <select class="custom-select__control" id="filters-form-sort" name="filters-form-sort">
+            <option value="by-popularity" selected>по популярности</option>
+            <option value="cheap-first">сначала недорогие</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="by-fat-content">по жирности</option>
           </select>
           <svg class="custom-select__icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"
             fill="#323232">

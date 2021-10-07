@@ -51,9 +51,10 @@
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
-          <form class="user-nav__popup search-form" id="user-nav-serach-form" action="">
-            <label class="visually-hidden" for="">Поиск</label>
-            <input class="search-form__textfield" type="text" placeholder="Крем-брюле">
+          <form class="user-nav__popup search-form" id="serach-form" action="#" method="GET">
+            <label class="visually-hidden" for="serach-form-text">Поиск</label>
+            <input class="search-form__textfield" id="serach-form-text" name="serach-form-text" type="text"
+              placeholder="Крем-брюле">
           </form>
         </li>
         <li class="user-nav__item user-nav__item--login">
@@ -64,14 +65,16 @@
             </svg>
             Вход
           </a>
-          <form class="user-nav__popup login-form" action="">
+          <form class="user-nav__popup login-form" id="login-form" action="#" method="POST">
             <p class="login-form__textbox-wrapper">
-              <label class="visually-hidden" for="">Логин</label>
-              <input class="login-form__textbox" type="email" name="" id="" placeholder="email@example.com">
+              <label class="visually-hidden" for="login-form-user-email">Логин</label>
+              <input class="login-form__textbox" type="email" name="login-form-user-email" id="login-form-user-email"
+                placeholder="email@example.com">
             </p>
             <p class="login-form__textbox-wrapper">
-              <label class="visually-hidden" for="">Пароль</label>
-              <input class="login-form__textbox" type="password" name="" id="" placeholder="......">
+              <label class="visually-hidden" for="login-form-user-password">Пароль</label>
+              <input class="login-form__textbox" type="password" name="login-form-user-password"
+                id="login-form-user-password" placeholder="......">
             </p>
             <div class="login-form__bottom-controls">
               <button class="login-form__submit" type="submit">Войти</button>
@@ -109,21 +112,43 @@
         <h2 class="visually-hidden">Наши главные акции</h2>
         <div class="promo__slider slider">
           <div class="promo__item slider__item">
-            <h3 class="promo__title slider__title">Крем-брюле и пломбир
-              с малиновым джемом</h3>
-            <a class="promo__btn slider__btn button button--big" href="#">Давайте оба!</a>
+            <h3 class="promo__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <div class="promo__picture">
+              <img src="img/promo-icecream-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+            </div>
+            <div class="promo__btn-wrapper">
+              <a class="promo__btn" href="#">Давайте оба!</a>
+            </div>
           </div>
           <div class="promo__item slider__item">
-            <h3 class="promo__title slider__title">Шоколадный пломбир
-              и лимонный сорбет</h3>
-            <a class="promo__btn slider__btn button button--big" href="#">Давайте оба!</a>
+            <h3 class="promo__title">Шоколадный пломбир и лимонный сорбет</h3>
+            <div class="promo__picture">
+              <img src="img/promo-icecream-2.png" alt="Шоколадный пломбир и лимонный сорбет">
+            </div>
+            <div class="promo__btn-wrapper">
+              <a class="promo__btn" href="#">Давайте оба!</a>
+            </div>
           </div>
           <div class="promo__item slider__item">
-            <h3 class="promo__title slider__title">Пломбир с помадкой
-              и клубничный щербет</h3>
-            <a class="promo__btn slider__btn button button--big" href="#">Давайте оба!</a>
+            <h3 class="promo__title">Пломбир с помадкой и клубничный щербет</h3>
+            <div class="promo__picture">
+              <img src="img/promo-icecream-3.png" alt="Пломбир с помадкой и клубничный щербет">
+            </div>
+            <div class="promo__btn-wrapper">
+              <a class="promo__btn" href="#">Давайте оба!</a>
+            </div>
           </div>
-          <div class="slider__controls"></div>
+          <div class="slider__controls">
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">Слайд 1</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Слайд 2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Слайд 3</span>
+            </button>
+          </div>
         </div>
       </section>
       <section class="events">
@@ -281,7 +306,7 @@
         <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.326120%2C59.939052&utm_medium=mapframe&utm_source=maps&z=16.33"
           style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
         <iframe class="contacts__map-embedded" src="https://yandex.ru/map-widget/v1/-/CCUqmMdLtB" width="560"
-          height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          height="400" style="position:relative;"></iframe>
       </div>
     </section>
   </main>
