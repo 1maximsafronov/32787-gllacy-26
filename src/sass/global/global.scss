@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $basic-white;
+  background-color: #849d8f;
+
+  font-family: $primary-font;
+  font-size: 16px;
+}

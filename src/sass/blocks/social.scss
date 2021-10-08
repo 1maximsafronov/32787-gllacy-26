@@ -20,7 +20,7 @@
   width: 36px;
   height: 36px;
 
-  border: 2px solid rgba(#ffffff, 0.5);
+  border: 2px solid $basic-white-opacity-50;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -64,7 +64,7 @@
 
   &:hover,
   &:focus {
-    border: 2px solid rgba(#ffffff, 0.5);
+    border: 2px solid $basic-white-opacity-50;
 
     &::before {
       opacity: 1;
@@ -72,6 +72,6 @@
   }
 
   &:active {
-    border: 2px solid rgba(#ffffff, 0.7);
+    border: 2px solid $basic-white-opacity-70;
   }
 }

@@ -6,7 +6,7 @@
   margin: 0;
   margin-bottom: 25px;
 
-  color: #ffffff;
+  color: $basic-white;
 
   font-size: 35px;
   font-weight: 700;
@@ -29,5 +29,5 @@
 
   padding-bottom: 30px;
 
-  border-bottom: 1px solid rgba(#ffffff, 0.3);
+  border-bottom: 1px solid $basic-white-opacity-30;
 }

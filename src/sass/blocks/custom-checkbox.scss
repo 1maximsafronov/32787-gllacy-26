@@ -21,7 +21,7 @@
 
   &:hover,
   &:focus {
-    color: #323232;
+    color: $main-gray;
 
     &::before {
       opacity: 1;
@@ -38,7 +38,7 @@
 }
 
 input[type="checkbox"]:focus + .custom-checkbox {
-  color: #323232;
+  color: $main-gray;
 
   &::before {
     opacity: 1;

@@ -7,10 +7,10 @@
 
   list-style: none;
 
-  color: #323232;
+  color: $main-gray;
   border-radius: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: $basic-white;
+  box-shadow: 0 20px 20px $basic-black-opacity-40;
 
   font-size: 14px;
   font-weight: 400;
@@ -73,7 +73,7 @@
   }
 
   &--current {
-    color: #ffffff;
+    color: $basic-white;
     background-color: #d07058;
   }
 }

@@ -18,7 +18,7 @@
   text-align: center;
   text-decoration: none;
 
-  color: #ffffff;
+  color: $basic-white;
   border-radius: 26px;
 
   font-size: 16px;
@@ -31,13 +31,13 @@
   }
 
   &--current {
-    color: #323232;
-    background-color: #ffffff;
+    color: $main-gray;
+    background-color: $basic-white;
 
     &:hover,
     &:focus {
-      color: #323232;
-      background-color: #ffffff;
+      color: $main-gray;
+      background-color: $basic-white;
     }
   }
 }

@@ -5,10 +5,10 @@
   padding-bottom: 20px;
   padding-left: 15px;
 
-  color: #323232;
+  color: $main-gray;
   border-radius: 4px;
-  background-color: #f8f7f4;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: $popup-bg;
+  box-shadow: 0 20px 20px $basic-black-opacity-40;
 
   font-size: 13px;
   line-height: 16px;

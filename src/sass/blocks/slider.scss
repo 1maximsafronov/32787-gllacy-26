@@ -30,20 +30,20 @@
 
   cursor: pointer;
 
-  border: 2px solid #ffffff;
+  border: 2px solid $basic-white;
   border-radius: 50%;
   background: none;
 
   &--current {
-    background-color: #ffffff;
+    background-color: $basic-white;
   }
 
   &:hover,
   &:focus {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: $basic-white-opacity-40;
   }
 
   &:active {
-    background-color: #ffffff;
+    background-color: $basic-white;
   }
 }

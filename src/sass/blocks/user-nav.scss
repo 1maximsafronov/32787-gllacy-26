@@ -52,8 +52,8 @@
     }
 
     .user-nav__link {
-      color: #323232;
-      background-color: #ffffff;
+      color: $main-gray;
+      background-color: $basic-white;
 
       &::after {
         position: absolute;
@@ -107,9 +107,9 @@
   text-align: center;
   text-decoration: none;
 
-  color: #ffffff;
+  color: $basic-white;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $basic-white-opacity-20;
 
   font-size: 14px;
   font-weight: 500;
@@ -117,11 +117,11 @@
 
   &:hover,
   &:focus {
-    color: #323232;
-    background-color: #ffffff;
+    color: $main-gray;
+    background-color: $basic-white;
 
     .user-nav__icon {
-      fill: #323232;
+      fill: $main-gray;
     }
   }
 }
@@ -131,7 +131,7 @@
   top: 6px;
   left: 16px;
 
-  fill: #ffffff;
+  fill: $basic-white;
 }
 
 .user-nav__popup {

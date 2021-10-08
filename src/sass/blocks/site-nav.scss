@@ -18,10 +18,10 @@
 
   margin-right: 6px;
 
-  color: #ffffff;
+  color: $basic-white;
 
   &--current .site-nav__link {
-    color: #ffffff;
+    color: $basic-white;
     background-color: #d07058;
   }
 
@@ -60,7 +60,7 @@
 
   text-decoration: none;
 
-  color: #ffffff;
+  color: $basic-white;
   border-radius: 26px;
 
   &::after {
@@ -75,13 +75,13 @@
 
     content: "";
 
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: $basic-white-opacity-20;
   }
 
   &[href]:hover,
   &[href]:focus {
-    color: #323232;
-    background-color: #ffffff;
+    color: $main-gray;
+    background-color: $basic-white;
 
     &::after {
       display: none;
@@ -98,7 +98,7 @@
   }
 
   &--current {
-    color: #ffffff;
+    color: $basic-white;
     background-color: #d07058;
 
     &::after {

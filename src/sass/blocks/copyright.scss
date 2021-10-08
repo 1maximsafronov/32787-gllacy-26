@@ -1,5 +1,5 @@
 .copyright {
-  color: #ffffff;
+  color: $basic-white;
 
   font-size: 12px;
   font-weight: 400;
@@ -18,10 +18,10 @@
 }
 
 .copyright__link {
-  color: #ffffff;
+  color: $basic-white;
 
   &:visited {
-    color: #ffffff;
+    color: $basic-white;
   }
 
   &:hover,

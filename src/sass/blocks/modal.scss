@@ -1,5 +1,6 @@
 .modal {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
 
@@ -8,7 +9,11 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(#000000, 0.5);
+  background-color: $basic-black-opacity-50;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal__wrapper {
@@ -24,7 +29,6 @@
   transform: translateX(-50%) translateY(-50%);
 
   border-radius: 6px;
-  background-color: #f8f7f4;
 }
 
 .modal__title {
@@ -62,7 +66,7 @@
     content: "";
     transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 
-    background-color: #000000;
+    background-color: $basic-black;
   }
 
   &::after {
@@ -74,6 +78,6 @@
     content: "";
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
 
-    background-color: #000000;
+    background-color: $basic-black;
   }
 }

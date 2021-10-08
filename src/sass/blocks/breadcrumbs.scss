@@ -7,7 +7,7 @@
 
   list-style: none;
 
-  color: #ffffff;
+  color: $basic-white;
 
   font-size: 14px;
   font-weight: 400;
@@ -23,7 +23,7 @@
 .breadcrumbs__link {
   margin-right: 8px;
 
-  color: #ffffff;
+  color: $basic-white;
 
   &:hover,
   &:focus {

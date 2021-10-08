@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    color: #323232;
+    color: $main-gray;
 
     &::before {
       opacity: 1;
@@ -37,7 +37,7 @@
 }
 
 input[type="radio"]:focus + .custom-radio {
-  color: #323232;
+  color: $main-gray;
 
   &::before {
     opacity: 1;

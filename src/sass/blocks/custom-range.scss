@@ -5,7 +5,7 @@
   padding-left: 21px;
 
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $basic-white-opacity-20;
 }
 
 .custom-range__scale {
@@ -41,7 +41,7 @@
   cursor: pointer;
   transform: translateY(-50%);
 
-  border: 8px solid #ffffff;
+  border: 8px solid $basic-white;
   border-radius: 50%;
   background-color: #ababab;
   box-shadow: 0 2px 0 0 rgba(#ababab, 0.3);

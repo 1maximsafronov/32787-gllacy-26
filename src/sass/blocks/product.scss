@@ -46,8 +46,8 @@
       content: "";
 
       border-radius: 5px;
-      background-color: rgba(#ffffff, 0.2);
-      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+      background-color: $basic-white-opacity-20;
+      box-shadow: 0 20px 20px $basic-black-opacity-40;
     }
 
     .products__quick-view {
@@ -83,7 +83,7 @@
   text-align: center;
   text-decoration: underline;
 
-  color: #ffffff;
+  color: $basic-white;
 
   font-size: 16px;
   font-weight: 500;
@@ -97,7 +97,7 @@
 
   margin: 0;
 
-  color: #ffffff;
+  color: $basic-white;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 
   font-size: 45px;
@@ -119,7 +119,7 @@
   padding-right: 16px;
   padding-left: 16px;
 
-  color: #ffffff;
+  color: $basic-white;
   border-radius: 50px;
   box-shadow: 0 1px 2px #ac1000;
   text-shadow: none;
