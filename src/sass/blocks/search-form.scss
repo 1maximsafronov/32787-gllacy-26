@@ -1,14 +1,22 @@
 .search-form {
+  width: 341px;
+  margin: 0;
   padding-top: 20px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 15px;
 
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: $popup-bg;
+  box-shadow: 0 20px 20px $basic-black-opacity-40;
 }
 
-.search-form__text-field {
-  margin: 0;
+.search-form__textfield {
+  display: block;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-size: 14px;
+  line-height: 16px;
 }

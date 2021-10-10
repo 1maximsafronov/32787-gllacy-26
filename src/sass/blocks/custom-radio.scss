@@ -1,0 +1,59 @@
+.custom-radio {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  &::before {
+    display: block;
+
+    width: 22px;
+    height: 22px;
+    margin-right: 11px;
+
+    content: "";
+
+    opacity: 0.8;
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    color: $main-gray;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.4;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+input[type="radio"]:focus + .custom-radio {
+  color: $main-gray;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+input[type="radio"]:active + .custom-radio {
+  opacity: 0.4;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+input[type="radio"]:checked + .custom-radio {
+  &::before {
+    background-image: url("../img/radio-on.svg");
+  }
+}

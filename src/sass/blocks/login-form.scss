@@ -1,46 +1,66 @@
 .login-form {
+  width: 277px;
   padding-top: 20px;
   padding-right: 17px;
   padding-bottom: 22px;
   padding-left: 19px;
 
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background-color: $popup-bg;
+  box-shadow: 0 20px 20px $basic-black-opacity-40;
 }
 
-.login-form__text-field {
+.login-form__textbox {
+  display: block;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-form__textbox-wrapper {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.login-form__submit-btn {
-  margin-right: 20px;
-}
-
-.login-form__columns {
+.login-form__bottom-controls {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
-.login-form__helper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.login-form__submit {
+  padding-right: 25px;
+  padding-left: 25px;
+
+  border-radius: 26px;
+  text-shadow: none;
+}
+
+.login-form__links {
   margin: 0;
+}
 
-  font-weight: 400;
+.login-form__link {
+  margin-bottom: 6px;
+
+  color: $main-gray;
+
   font-size: 13px;
-  line-height: 24px;
+  line-height: 15px;
 
-  a {
-    color: #323232;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: #e84d37;
-    }
+  &:hover,
+  &:focus {
+    color: #e84d37;
+  }
+
+  &:active {
+    color: #e84d37;
   }
 }

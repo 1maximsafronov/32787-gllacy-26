@@ -1,19 +1,33 @@
+.catalog {
+  padding-top: 25px;
+}
+
 .catalog__title {
   margin: 0;
   margin-bottom: 25px;
 
-  font-weight: 700;
+  color: $basic-white;
+
   font-size: 35px;
+  font-weight: 700;
   line-height: 41px;
-  color: #ffffff;
+}
+
+.catalog__filter {
+  margin-bottom: 28px;
 }
 
 .catalog__list {
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
 }
 
 .catalog__pagination {
-  display: inline-block;
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $basic-white-opacity-30;
 }

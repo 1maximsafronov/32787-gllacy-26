@@ -1,19 +1,5 @@
 .main-nav {
   display: flex;
   align-items: flex-start;
-}
-
-.main-nav__logo {
-  margin-right: 10px;
-}
-
-.main-nav__site-nav {
-  width: 690px;
-  margin-top: 14px;
-}
-
-.main-nav__user-nav {
-  width: 267px;
-  margin-top: 14px;
-  margin-left: auto;
+  justify-content: space-between;
 }

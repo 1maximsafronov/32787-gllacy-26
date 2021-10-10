@@ -1,15 +1,17 @@
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
 
   list-style: none;
-  font-weight: 400;
+
+  color: $basic-white;
+
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
-  color: #ffffff;
 }
 
 .breadcrumbs__item {
@@ -21,7 +23,7 @@
 .breadcrumbs__link {
   margin-right: 8px;
 
-  color: #ffffff;
+  color: $basic-white;
 
   &:hover,
   &:focus {

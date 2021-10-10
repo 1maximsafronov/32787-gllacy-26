@@ -1,137 +1,144 @@
 .user-nav {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  margin: 0;
   padding: 0;
 
   list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: white;
 }
 
 .user-nav__item {
   position: relative;
 
   margin-left: 10px;
-  padding-bottom: 5px;
 
-  &:hover {
+  &--search {
     .user-nav__link {
-      color: #323232;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      background-color: #ffffff;
+      width: 32px;
+      height: 32px;
+      padding: 0;
     }
 
     .user-nav__icon {
-      fill: #000000;
+      position: static;
 
-      &--cart {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--login {
+    .user-nav__icon {
+      width: 20px;
+      height: 19px;
+    }
+  }
+
+  &--cart {
+    .user-nav__icon {
+      width: 21px;
+      height: 20px;
+    }
+  }
+
+  &--filled-cart {
+    .user-nav__icon {
+      display: none;
+    }
+
+    .user-nav__link {
+      color: $main-gray;
+      background-color: $basic-white;
+
+      &::after {
+        position: absolute;
+        top: 6px;
+        left: 16px;
+
+        display: block;
+
+        width: 21px;
+        height: 20px;
+
+        content: "";
+
         background-image: url("../img/basket-red.svg");
       }
     }
+  }
 
-    .user-nav__modal {
+  &:hover,
+  &:focus {
+    &::after {
+      position: absolute;
+      bottom: -5px;
+
+      display: block;
+
+      width: 100%;
+      height: 5px;
+
+      content: "";
+
+      background-color: transparent;
+    }
+
+    .user-nav__popup {
       display: block;
     }
   }
-}
-
-.user-nav__modal {
-  display: none;
-}
-
-.user-nav__search-form {
-  position: absolute;
-  top: 100%;
-  right: 0;
-
-  width: 340px;
-}
-
-.user-nav__login-form {
-  position: absolute;
-  top: 100%;
-  right: 0;
-
-  width: 277px;
-}
-
-.user-nav__product-cart {
-  position: absolute;
-  top: 100%;
-  right: 0;
 }
 
 .user-nav__link {
   position: relative;
 
   display: block;
-  padding-top: 8px;
-  padding-right: 17px;
-  padding-bottom: 8px;
-  padding-left: 15px;
 
-  color: #ffffff;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 45px;
+
+  text-align: center;
   text-decoration: none;
 
-  background-color: rgba(#ffffff, 0.2);
-  border-radius: 15px;
+  color: $basic-white;
+  border-radius: 20px;
+  background-color: $basic-white-opacity-20;
 
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 
-  &--search {
-    width: 33px;
-    height: 33px;
-    padding: 0;
-  }
+  &:hover,
+  &:focus {
+    color: $main-gray;
+    background-color: $basic-white;
 
-  &--login {
-    padding-left: 43px;
-  }
-
-  &--cart {
-    padding-left: 44px;
-  }
-
-  &:hover {
-    color: #323232;
-
-    background-color: #ffffff;
+    .user-nav__icon {
+      fill: $main-gray;
+    }
   }
 }
 
 .user-nav__icon {
   position: absolute;
+  top: 6px;
+  left: 16px;
 
-  fill: #ffffff;
+  fill: $basic-white;
+}
 
-  &--search {
-    top: 50%;
-    left: 50%;
+.user-nav__popup {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 5px);
+  right: 0;
 
-    width: 17px;
-    height: 17px;
-
-    transform: translateY(-50%) translateX(-50%);
-  }
-
-  &--login {
-    top: 50%;
-    left: 16px;
-
-    transform: translateY(-50%);
-  }
-
-  &--cart {
-    top: 50%;
-    left: 16px;
-
-    width: 21px;
-    height: 20px;
-
-    background-image: url("../img/basket.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transform: translateY(-50%);
-  }
+  display: none;
 }
