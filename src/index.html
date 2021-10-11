@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Глейси</title>
+  <link rel="preload" href="fonts/roboto.woff2" as="font">
+  <link rel="preload" href="fonts/robotobold.woff2" as="font">
+  <link rel="preload" href="fonts/robotomedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -112,7 +115,7 @@
       <section class="promo">
         <h2 class="visually-hidden">Наши главные акции</h2>
         <div class="promo__slider slider">
-          <div class="promo__item slider__item">
+          <div class="promo__item slider__item slider__item--show">
             <h3 class="promo__title">Крем-брюле и пломбир с малиновым джемом</h3>
             <div class="promo__picture">
               <picture>
@@ -124,7 +127,7 @@
               <a class="promo__btn button button--big" href="blank.html">Давайте оба!</a>
             </div>
           </div>
-          <div class="promo__item slider__item">
+          <div class="promo__item slider__item ">
             <h3 class="promo__title">Шоколадный пломбир и лимонный сорбет</h3>
             <div class="promo__picture">
               <picture>
@@ -372,7 +375,8 @@
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Сайт
             разработан в HTML Academy">
       </p>
-      <p class="copyright__author">Сделано в <a class="copyright__link" href="blank.html">HTML Academy</a> &copy; 2019
+      <p class="copyright__author">Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"
+          target="_blank">HTML Academy</a> &copy; 2019
       </p>
     </div>
   </footer>

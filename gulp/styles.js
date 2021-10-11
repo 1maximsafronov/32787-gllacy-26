@@ -8,7 +8,7 @@ const postcss = require(`gulp-postcss`);
 const sourcemaps = require(`gulp-sourcemaps`);
 const autoprefixer = require(`autoprefixer`);
 
-const stylec = () => {
+const styles = () => {
   return gulp
     .src(`src/sass/style.scss`)
     .pipe(plumber())
@@ -25,4 +25,4 @@ const stylec = () => {
 };
 
 
-module.exports = stylec;
+module.exports = styles;
