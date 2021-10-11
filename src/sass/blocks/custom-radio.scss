@@ -14,7 +14,7 @@
     content: "";
 
     opacity: 0.8;
-    background-image: url("../img/radio-off.svg");
+    background-image: url("../img/icon-radio-off.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -54,6 +54,6 @@ input[type="radio"]:active + .custom-radio {
 
 input[type="radio"]:checked + .custom-radio {
   &::before {
-    background-image: url("../img/radio-on.svg");
+    background-image: url("../img/icon-radio-on.svg");
   }
 }

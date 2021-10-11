@@ -54,21 +54,21 @@
     .user-nav__link {
       color: $main-gray;
       background-color: $basic-white;
+    }
 
-      &::after {
-        position: absolute;
-        top: 6px;
-        left: 16px;
+    .user-nav__link::after {
+      position: absolute;
+      top: 6px;
+      left: 16px;
 
-        display: block;
+      display: block;
 
-        width: 21px;
-        height: 20px;
+      width: 21px;
+      height: 20px;
 
-        content: "";
+      content: "";
 
-        background-image: url("../img/basket-red.svg");
-      }
+      background-image: url("../img/icon-basket-red.svg");
     }
   }
 

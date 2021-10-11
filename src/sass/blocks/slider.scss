@@ -5,7 +5,7 @@
 .slider__item {
   display: none;
 
-  &:nth-child(3) {
+  &--show {
     display: block;
   }
 }

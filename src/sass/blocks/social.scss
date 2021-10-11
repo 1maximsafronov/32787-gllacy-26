@@ -9,7 +9,7 @@
 }
 
 .social__item {
-  margin-right: 11px;
+  margin-right: 14px;
 }
 
 .social__link {
@@ -40,25 +40,25 @@
 
   &--twitter {
     &::before {
-      background-image: url("../img/twitter.svg");
+      background-image: url("../img/icon-twitter.svg");
     }
   }
 
   &--inst {
     &::before {
-      background-image: url("../img/instagram.svg");
+      background-image: url("../img/icon-instagram.svg");
     }
   }
 
   &--facebook {
     &::before {
-      background-image: url("../img/fb.svg");
+      background-image: url("../img/icon-fb.svg");
     }
   }
 
   &--vk {
     &::before {
-      background-image: url("../img/vk.svg");
+      background-image: url("../img/icon-vk.svg");
     }
   }
 
