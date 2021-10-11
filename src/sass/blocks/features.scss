@@ -58,13 +58,13 @@
 
   &--ice-cream {
     &::before {
-      background-image: url("../img/ice-cream.svg");
+      background-image: url("../img/icon-ice-cream.svg");
     }
   }
 
   &--eco {
     &::before {
-      background-image: url("../img/eco.svg");
+      background-image: url("../img/icon-eco.svg");
     }
   }
 
@@ -72,13 +72,13 @@
     &::before {
       position: absolute;
 
-      background-image: url("../img/cow.svg");
+      background-image: url("../img/icon-cow.svg");
     }
   }
 
   &--thermometer {
     &::before {
-      background-image: url("../img/thermometer.svg");
+      background-image: url("../img/icon-thermometer.svg");
     }
   }
 }

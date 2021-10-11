@@ -14,7 +14,7 @@
     content: "";
 
     opacity: 0.8;
-    background-image: url("../img/checkbox-off.svg");
+    background-image: url("../img/icon-checkbox-off.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -58,6 +58,6 @@ input[type="checkbox"]:checked + .custom-checkbox {
     width: 24px;
     margin-right: 8px;
 
-    background-image: url("../img/checkbox-on.svg");
+    background-image: url("../img/icon-checkbox-on.svg");
   }
 }
