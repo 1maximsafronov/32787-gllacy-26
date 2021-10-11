@@ -1,7 +1,7 @@
 {
-  "name": "gllacy",
+  "name": "gllacy-26",
   "version": "1.0.0",
-  "description": "Проект Глейси",
+  "description": "Личный проект «Глейси» от HTML Academy",
   "private": true,
   "scripts": {
     "start": "gulp start",
